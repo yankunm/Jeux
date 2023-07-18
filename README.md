@@ -1,1 +1,1 @@
-# Multithreaded_TicTacToe
+# Jeux: Multithreaded Game Server in ANSI C
