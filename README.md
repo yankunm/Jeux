@@ -61,13 +61,6 @@ However, [this opengroup.org site](http://pubs.opengroup.org/onlinepubs/7908799/
 provides a list of all the available functions.  The same list is also
 available for [semaphores](http://pubs.opengroup.org/onlinepubs/7908799/xsh/semaphore.h.html).
 
-## Getting Started
-
-Fetch and merge the base code for `hw5` as described in `hw0`. You can
-find it at this link: https://gitlab02.cs.stonybrook.edu/cse320/hw5.
-Remember to use the `--strategy-option=theirs` flag for the `git merge`
-command to avoid merge conflicts in the Gitlab CI file.
-
 ## The Jeux Game Server: Overview
 
 "Jeux" is a simple implementation of a game server, which allows users
