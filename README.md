@@ -10,7 +10,7 @@ users to play each other in a two-player game and assigns them numerical
 
 ### Takeaways
 
-After completing this homework, you should:
+After completing this homework, the programmer:
 
 * Have a basic understanding of socket programming
 * Understand thread execution, mutexes, and semaphores
