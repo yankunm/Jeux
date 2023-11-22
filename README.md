@@ -10,13 +10,11 @@ users to play each other in a two-player game and assigns them numerical
 
 ### Takeaways
 
-After completing this homework, the programmer:
-
 * Have a basic understanding of socket programming
 * Understand thread execution, mutexes, and semaphores
 * Have an advanced understanding of POSIX threads
 * Have some insight into the design of concurrent data structures
-* Have enhanced your C programming abilities
+* Have enhanced my C programming abilities
 
 ## Hints and Tips
 
@@ -50,16 +48,7 @@ After completing this homework, the programmer:
 
 You should make sure that you understand the material covered in
 chapters **11.4** and **12** of **Computer Systems: A Programmer's
-Perspective 3rd Edition** before starting this assignment.  These
-chapters cover networking and concurrency in great detail and will be
-an invaluable resource for this assignment.
-
-### pthread Man Pages
-
-The pthread man pages can be easily accessed through your terminal.
-However, [this opengroup.org site](http://pubs.opengroup.org/onlinepubs/7908799/xsh/pthread.h.html)
-provides a list of all the available functions.  The same list is also
-available for [semaphores](http://pubs.opengroup.org/onlinepubs/7908799/xsh/semaphore.h.html).
+Perspective 3rd Edition** before starting this a
 
 ## The Jeux Game Server: Overview
 
