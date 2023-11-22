@@ -16,40 +16,6 @@ users to play each other in a two-player game and assigns them numerical
 * Have some insight into the design of concurrent data structures
 * Have enhanced my C programming abilities
 
-## Hints and Tips
-
-* We strongly recommend you check the return codes of all system
-  calls. This will help you catch errors.
-
-* **BEAT UP YOUR OWN CODE!** Throw lots of concurrent calls at your
-  data structures to ensure safety.
-
-* Your code should **NEVER** crash. We will be deducting points for
-  each time your program crashes during grading. Make sure your code
-  handles invalid usage gracefully.
-
-* You should make use of the macros in `debug.h`. You would never
-  expect a library to print arbitrary statements as it could interfere
-  with the program using the library. **FOLLOW THIS CONVENTION!**
-  `make debug` is your friend.
-
-> :scream: **DO NOT** modify any of the header files provided to you in the base code.
-> These have to remain unmodified so that the modules can interoperate correctly.
-> We will replace these header files with the original versions during grading.
-> You are of course welcome to create your own header files that contain anything
-> you wish.
-
-> :nerd: When writing your program, try to comment as much as possible
-> and stay consistent with your formatting.
-
-## Helpful Resources
-
-### Textbook Readings
-
-You should make sure that you understand the material covered in
-chapters **11.4** and **12** of **Computer Systems: A Programmer's
-Perspective 3rd Edition** before starting this a
-
 ## The Jeux Game Server: Overview
 
 "Jeux" is a simple implementation of a game server, which allows users
