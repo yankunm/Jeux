@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The goal of this assignment is to become familiar with low-level POSIX
+The goal of this project is to become familiar with low-level POSIX
 threads, multi-threading safety, concurrency guarantees, and networking.
 The overall objective is to implement a simple game server that allows
 users to play each other in a two-player game and assigns them numerical
