@@ -1,35 +1,26 @@
-# Jeux: Multithreaded Game Server in ANSI C
+# Jeux: Multithreaded CLI Game Server in C
 
-## Introduction
+Title -
+Description -
+Why? -
+Quick Start -
+Usage -
+Contributing -
 
-The goal of this project is to become familiar with low-level POSIX
-threads, multi-threading safety, concurrency guarantees, and networking.
-The overall objective is to implement a simple game server that allows
-users to play each other in a two-player game and assigns them numerical
-"ratings" that reflect their performance relative to other players.
+## Description
 
-### Takeaways
+*"Jeux" means "games" in French.*
 
-* Have a basic understanding of socket programming
-* Understand thread execution, mutexes, and semaphores
-* Have an advanced understanding of POSIX threads
-* Have some insight into the design of concurrent data structures
-* Have enhanced my C programming abilities
+This is a low level implementation of a game server, which allows users
+to play each other in a **two-player game**.  Since implementing the game
+itself is not my primary interest, I have chosen to support a very simple game: tic-tac-toe.  
+However, the design of the server is such that it would be very easy to substitute a more interesting game, such as checkers or chess, and with a little bit of extension to the design it could support multiple types of games at once.
 
-## The Jeux Game Server: Overview
+## Quickstart
 
-"Jeux" is a simple implementation of a game server, which allows users
-to play each other in a two-player game.  Since implementing the game
-itself is not our primary interest in this assignment, we have chosen
-to support a very simple game: tic-tac-toe.  However, the design of the
-server is such that it would be very easy to substitute a more interesting
-game, such as checkers or chess, and with a little bit of extension to
-the design it could support multiple types of games at once.
+## Usage
 
-Perhaps the easiest way to understand what the server does is to try it out.
-For this purpose, I have provided an executable (`demo/jeux`) for
-a completely implemented demonstration version of the server.
-Launch it using the following command:
+Perhaps the easiest way to understand what the server does is to try it out. Launch it using the following command:
 
 ```
 $ demo/jeux -p 3333
@@ -41,6 +32,7 @@ separate terminal window, because it has not been written to detach from the
 terminal and run as a `daemon` like a normal server would do.  This is because
 you will be starting and stopping it frequently and you will want to be able
 to see the voluminous debugging messages it issues.
+
 The server does not ignore `SIGINT` as a normal daemon would,
 so you can ungracefully shut down the server at any time by typing CTRL-C.
 Note that the only thing that the server prints are debugging messages;
@@ -676,3 +668,19 @@ For more detailed specifications, see the comments in the header file `game.h`.
   `GAME`, for the player in the specified `GAME_ROLE`.
 - `game_unparse_move`: Get a string that describes a specified `GAME_MOVE`,
   in a format appropriate to be shown to human users.
+
+
+
+The goal of this project is to become familiar with low-level POSIX
+threads, multi-threading safety, concurrency guarantees, and networking.
+The overall objective is to implement a simple game server that allows
+users to play each other in a two-player game and assigns them numerical
+"ratings" that reflect their performance relative to other players.
+
+### Takeaways
+
+* Have a basic understanding of socket programming
+* Understand thread execution, mutexes, and semaphores
+* Have an advanced understanding of POSIX threads
+* Have some insight into the design of concurrent data structures
+* Have enhanced my C programming abilities
