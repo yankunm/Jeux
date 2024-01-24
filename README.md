@@ -7,6 +7,8 @@ to play each other in a **two-player game**.  Since implementing the game
 itself is not my primary interest, I have chosen to support a very simple game: tic-tac-toe.  
 However, the design of the server is such that it would be very easy to substitute a more interesting game, such as checkers or chess, and with a little bit of extension to the design it could support multiple types of games at once.
 
+This is a Systems Fundamentals Course Project.
+
 ## Quickstart
 
 ## Usage
