@@ -155,50 +155,7 @@ a library `jeux.a` containing binary object code for my
 implementations of the modules, and a source code file `main.c` that
 contains containing a stub for function `main()`.  The `Makefile` is
 designed to compile any existing source code files and then link them
-against the provided library.  The result is that any modules for
-which you provide source code will be included in the final
-executable, but modules for which no source code is provided will be
-pulled in from the library.
-
-> :scream:  Note that if you define any functions in a particular
-> source code module, then you must define all of them
-> (at least you must provide stubs), otherwise the linker will pull in
-> the library module as well as linking your module and the result will
-> be a "multiply defined" error for the functions that you did define.
-
-The `jeux.a` library was compiled without `-DDEBUG`, so it does not
-produce any debugging printout.  Also provided is `jeux_debug.a`,
-which was compiled with `-DDEBUG`, and which will produce a lot of
-debugging output.  The `Makefile` is set up to use `jeux_debug.a` when
-you say `make debug` and `jeux.a` when you just say `make`.
-
-The `util` directory contains the executable for the text-based client
-program, `jclient`.
-Besides the `-h`, `-p`, and `-d` options discussed above, the `jclient` program
-also supports the `-q` option, which takes no arguments.  If `-q` is given,
-then `jclient` suppresses its normal prompt.  This may be useful for using
-`jclient` to feed in pre-programmed commands written in a file.
-The list of commands that `jclient` understands is printed out when it starts
-and can also be viewed by typing `help` at the command prompt.
-
-Most of the detailed specifications for the various modules and functions
-that you are to implement are provided in the comments in the header
-files in the `include` directory.  In the interests of brevity and avoiding
-redundancy, those specifications are not reproduced in this document.
-Nevertheless, the information they contain is very important, and constitutes
-the authoritative specification of what you are to implement.
-
-> :scream: The various functions and variables defined in the header files
-> constitute the **entirety** of the interfaces between the modules in this program.
-> Use these functions and variables as described and **do not** introduce any
-> additional functions or global variables as "back door" communication paths
-> between the modules.  If you do, the modules you implement will not interoperate
-> properly with my implementations, and it will also likely negatively impact
-> our ability to test your code.
-
-The test file I have provided contains some code to start a server and
-attempt to connect to it.  It will probably be useful while you are
-working on `main.c`.
+against the provided library.  
 
 ## Additional Background Information
 
