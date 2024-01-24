@@ -115,9 +115,9 @@ current game state.
 > are resigned.  Information about the player remains in the system;
 > in the present implementation this consists of the player's name and rating.
 
-### The Base Code
+### Code Structure
 
-Here is the structure of the base code:
+Here is the structure of the code:
 
 ```
 .
