@@ -7,9 +7,19 @@ to play each other in a **two-player game**.  Since implementing the game
 itself is not my primary interest, I have chosen to support a very simple game: tic-tac-toe.  
 However, the design of the server is such that it would be very easy to substitute a more interesting game, such as checkers or chess, and with a little bit of extension to the design it could support multiple types of games at once.
 
-This is a Systems Fundamentals Course Project.
+## Motivation
 
-## Quickstart
+The goal of this project is to become familiar with low-level POSIX
+threads, multi-threading safety, concurrency guarantees, and networking.
+There are more specifically five goals:
+
+* Have a basic understanding of socket programming
+* Understand thread execution, mutexes, and semaphores
+* Have an advanced understanding of POSIX threads
+* Have some insight into the design of concurrent data structures
+* Have enhanced my C programming abilities
+
+*Note: This is a course project for Systems Fundamentals*
 
 ## Usage
 
@@ -628,16 +638,3 @@ For more detailed specifications, see the comments in the header file `game.h`.
 
 
 
-The goal of this project is to become familiar with low-level POSIX
-threads, multi-threading safety, concurrency guarantees, and networking.
-The overall objective is to implement a simple game server that allows
-users to play each other in a two-player game and assigns them numerical
-"ratings" that reflect their performance relative to other players.
-
-### Takeaways
-
-* Have a basic understanding of socket programming
-* Understand thread execution, mutexes, and semaphores
-* Have an advanced understanding of POSIX threads
-* Have some insight into the design of concurrent data structures
-* Have enhanced my C programming abilities
