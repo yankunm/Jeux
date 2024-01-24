@@ -1,14 +1,5 @@
 # Jeux: Multithreaded CLI Game Server in C
 
-Title -
-Description -
-Why? -
-Quick Start -
-Usage -
-Contributing -
-
-## Description
-
 *"Jeux" means "games" in French.*
 
 This is a low level implementation of a game server, which allows users
@@ -87,8 +78,6 @@ you will also be able to connect to a server running on one computer from a
 server elsewhere in the Internet.  This will be most likely to work between two
 computers on the same LAN (e.g. connected to the same WiFi router, if the
 router is configured to allow connected computers to talk to each other).
-If it doesn't, there isn't much I can do about it.  In that case you'll just have
-to use it on your own computer.
 
 The Jeux server architecture is that of a multi-threaded network server.
 When the server is started, a **master** thread sets up a socket on which to
@@ -142,7 +131,16 @@ Here is the structure of the code:
     │   └── jeux_debug.a
     ├── Makefile
     ├── src
-    │   └── main.c
+    │   ├── client.c
+    │   ├── client_registry.c
+    │   ├── debug.c
+    │   ├── game.c
+    │   ├── invitation.c
+    │   ├── jeux_globals.c
+    │   ├── player.c
+    │   ├── player_registry.c
+    │   ├── protocol.c
+    │   └── server.c
     ├── test_output
     │   ├── .git-keep
     │   └── valgrind.out
